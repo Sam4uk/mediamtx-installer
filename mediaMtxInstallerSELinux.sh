@@ -27,7 +27,7 @@ install_deps_rhel() {
 if [ -f /etc/os-release ]; then
     . /etc/os-release
     case "$ID" in
-        ubuntu|debian)
+        ubuntu|debian|raspbian)
             install_deps_debian
             BIN_PATH="/usr/local/bin"
             CONFIG_PATH="/usr/local/etc"
